@@ -1,0 +1,589 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*全域設定*/
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+}
+
+.full{
+    width: 100%;
+}
+
+body{
+    font-family: 'Bruno Ace';
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+/*font*/
+h1{
+    font-size: 64px;
+    font-weight: 900;
+    color: #AA0601;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 900;
+
+}
+
+h3{
+    font-size: 36px;
+    color: #AA0601;
+}
+
+h4{
+    font-size: 24px;
+    color: #AA0601;
+}
+
+h5{
+    font-size: 20px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.fw-m{
+    font-weight: 600;
+}
+
+.fz36{
+    font-size: 36px;
+}
+
+.tittle-pb-s{
+    padding-bottom: 32px;
+}
+
+.itemTittle{
+    color: #AA0601;
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: 800;
+}
+
+.tittle-f-i{
+    color: #AA0601;
+    font-style: italic;
+    font-size: 48px;
+}
+
+/*font-color*/
+.fc1{
+    color: #AA0601;
+}
+
+.fc2{
+    color: #fff;
+}
+
+/*space*/
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.space-m{
+    padding: 80px 0;
+}
+
+.space-s{
+    padding: 48px 0;
+}
+
+.tittle-pb-m{
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+
+/*nav item1*/
+.nav{
+    width: 100%;
+    background-color: #AA0601;
+}
+
+.inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img{
+    width: 80px;
+    padding: 16px 0;
+}
+
+.inner ul{
+    display: flex;
+}
+
+.inner li a{
+    text-decoration: none;
+    margin-right: 64px;
+    color: #fff;
+    text-align: center;
+}
+
+
+@media (max-width: 992px) {
+
+    .container{
+		padding: 0 15px;
+	}
+
+    .inner ul{
+        justify-content: flex-end;
+    }
+
+    .inner li{
+		font-size: 20px;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+    .nav .container{
+        padding: 0;
+    }
+
+    .inner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .inner img{
+        margin-left:16px
+    }
+
+    .inner ul{
+		flex-wrap: wrap;
+	}
+
+    .inner li{
+        font-size: 24px;
+        border:1px solid #fff;
+        display: flex;
+        width: 50%;
+    }
+
+    .inner li a{
+        margin: 0 auto;
+        padding: 12px 62px;
+    }
+}
+
+
+/*banner item2*/
+.banner{
+    background: url(img/home-header.png) center top;
+    /* width: 100%;
+    height: 797px; */
+    background-size:cover;
+}
+
+.banner .content{
+    padding: 296px 0;
+    text-align: right;
+}
+
+.banner .cta{
+    background-color: #AA0601;
+    width: 104px;
+    margin-left: auto;
+    padding: 6px;
+}
+
+.banner .cta a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px){
+    .banner{
+        background: url(img/home-header-sm.png) center top;
+    }
+
+    .content h1{
+       font-size: 36px;
+    }
+    
+    .content h3{
+        font-size: 24px;
+     }
+
+}
+
+/*prof item3*/
+.prof{
+    background-color: #FBF2F2;
+    text-align: center;
+}
+
+.prof ul{
+    display: flex;
+}
+
+.prof img{
+    width: 84px;
+}
+
+.prof li {
+    max-width: calc(100%/4);
+    padding-left: 2em;
+}
+
+.prof li p{
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+
+    h2{
+        font-size: 48px;
+        padding-bottom: 8px;
+    }
+
+    .prof ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .prof li{
+        max-width: 46%;
+    }
+
+    .prof li p{
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .prof ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .prof li{
+        margin-bottom: 32px;
+        max-width: 86%;
+    }
+}
+
+
+/*prod item4*/
+.prod{
+    width: 100%;
+    text-align: center;
+}
+
+.prod ul{
+    display: flex;
+}
+
+@media (max-width: 992px) {
+    .prod{
+        margin-top: 80px;
+    }
+
+    .prod ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 80px 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .prod ul{
+        margin: 0;
+        margin-bottom: 80px;
+    }
+}
+
+
+
+/*glasses item5*/
+.glasses{
+    background-image: url(img/index-bg.png);
+    background-repeat: no-repeat;
+}
+
+.glasses h2{
+    text-align: center;
+}
+
+.glasses ul{
+    display: flex;
+}
+
+.glasses li{
+    background-color: #fff;
+}
+
+@media (max-width: 992px) {
+
+    .glasses ul{
+        flex-wrap: wrap;
+    }
+
+    .glasses li{
+        margin-bottom: 24px;
+    }
+}
+
+
+/*recom item6*/
+.recom ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recom li{
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    box-shadow:0 1px 2px #b2b2b2;
+    width: calc(100%/4);
+}
+
+.text{
+    height: 205px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recom span{
+    color: #707070;
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+
+    .recom ul{
+        flex-wrap: wrap;
+    }
+
+    .recom li{
+        width: 48%;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .recom li{
+        width: 100%;
+    }
+}
+
+
+.footer{
+    width: 100%;
+    background-color: #AA0601;
+    color: #fff;
+}
+
+/*form item7*/
+.form{
+    background-color: #FBF2F2;
+}
+
+form{
+    margin: 0 auto;
+    width: calc(100%/2);
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+
+.input-btn{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 48px;
+}
+
+.input-btn a h4{
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    background-color: #AA0601;
+    &:hover{
+        color: #AA0601;
+        background-color: #fff;
+    }
+}
+
+
+@media (max-width: 768px) {
+    form{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+
+
+/*footer item8*/
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 0 32px 0;
+}
+
+.wrap ul{
+    display: flex;
+    margin-bottom: 34px;
+}
+
+.wrap li a{
+    color: #fff;
+    padding-right: 48px;
+}
+
+.social img{
+    width: 48px;
+}
+
+.social a{
+    padding-left: 32px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}
+
+.contect h3{
+    color: #fff;
+    font-weight: 200;
+}
+
+.item span{
+    font-size: 48px;
+    padding-right: 16px;
+}
+
+.copylight{
+    width: 100%;
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copylight ul{
+    display: flex;
+}
+
+.copylight li a{
+    color: #fff;
+    margin-left: 48px;
+}
+
+
+@media (max-width: 768px) {
+    .footer{
+        font-size: 16px;
+    }
+
+    .item span{
+        font-size: 24px;
+        padding-right: 8px;
+    }
+
+    .wrap ul{
+        display: none;
+    }
+
+    .copylight{
+        flex-wrap: wrap;
+    }
+
+    .copylight ul{
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 24px;
+    }
+    .copylight li a{
+        margin-left: 0;
+        padding-right: 24px;
+    }
+}
